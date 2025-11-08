@@ -8,19 +8,25 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className=" border-2 w-full ">
-      <ul className="flex justify-between border-2 border-amber flex-col">
-        <li className="flex justify-end md:hidden" onClick={() => toggleMenu()}>
+    <nav className="pt-4 border-2 w-full md:w-[50%] justify-self-center">
+      <ul className="flex justify-between flex-col md:flex-row">
+        <li
+          className="flex justify-end pr-3 md:hidden"
+          onClick={() => toggleMenu()}
+        >
           <MenuIcon />
         </li>
-        {isOpen && (
-          <div>
-            <li>home</li>
-            <li>about</li>
-            <li>projects</li>
-            <li>contact</li>
-          </div>
-        )}
+
+        <div
+          className={`${
+            isOpen ? "block" : "hidden"
+          } md:flex md:w-full md:flex-row md:justify-between`}
+        >
+          <li>home</li>
+          <li>about</li>
+          <li>projects</li>
+          <li>contact</li>
+        </div>
       </ul>
     </nav>
   );
