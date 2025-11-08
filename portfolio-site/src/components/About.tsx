@@ -1,9 +1,9 @@
 import React from "react";
-
+import SectionHeader from "./text/SectionHeader";
 const About = () => {
   return (
     <div className="w-[90%] justify-self-center">
-      <h2 className="font-bold text-[2rem]">About</h2>
+      <SectionHeader text="About" />
       <div className="h-100 w-full bg-amber-500"></div>
       <div className="pt-2">
         <p className="text-start">
