@@ -8,7 +8,7 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="p-4 w-full flex justify-between flex-wrap">
+    <nav className="w-full flex justify-between flex-wrap">
       <a href="/">Logo</a>
       <div className="md:hidden" onClick={() => toggleMenu()}>
         <MenuIcon />
