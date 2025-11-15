@@ -8,8 +8,8 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="pt-4 border-2 w-full md:w-[50%] justify-self-center">
-      <ul className="flex justify-between flex-col md:flex-row">
+    <nav className="pt-4 w-full justify-self-center md:justify-self-end">
+      <ul className="flex flex-col md:flex-row">
         <li
           className="flex justify-end pr-3 md:hidden"
           onClick={() => toggleMenu()}
