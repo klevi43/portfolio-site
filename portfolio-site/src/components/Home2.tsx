@@ -1,20 +1,22 @@
 const Home = () => {
   return (
-    <div className="md:grid md:grid-cols-2 align-self-start h-[60vh]">
+    <div className=" h-[70vh]">
       <div className="flex flex-col justify-center p-6 h-full">
         <h2 className="text-[1.5rem] font-bold">
-          Hi, I'm <span className="text-cyan-500">Kyle Levisay</span>
+          Hi, I'm <span className="text-cyan-400">Kyle Levisay</span>.
         </h2>
-        <h2 className="text-[4rem] mb-4 font-bold">fullstack developer</h2>
-        <p className="mb-4">
+        <h2 className="text-[4.4rem] mb-3 font-bold">
+          fullstack <br />
+          developer
+        </h2>
+        <p className="mb-6 text-[1.1rem]">
           Let me help you take your small business to the next level with a
           professional looking website.
         </p>
         <div className="">
-          <button className="border-2 p-2 w-[40%] bg-">Contact</button>
+          <button className="border-2 p-2 w-[50%] bg-">Contact</button>
         </div>
       </div>
-      <div className=""></div>
     </div>
   );
 };

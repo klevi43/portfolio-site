@@ -2,8 +2,14 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
+  font-family: "Elms-Sans";
+  color: #eee;
 }
-h1 {
+@font-face {
+  font-family: "Elms-Sans";
+  src: url(../public/fonts/ElmsSans.ttf);
+}
+h1,
+h2 {
   line-height: 1.1;
 }
